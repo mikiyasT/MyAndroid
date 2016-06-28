@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mygcmpractice.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView android:text="@string/registering_message" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/informationTextView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/txt_msg"
+        android:layout_alignStart="@+id/txt_email"
+        android:layout_marginTop="63dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registrationProgressBar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register "
+        android:id="@+id/btn_register"
+        android:layout_above="@+id/btn_back"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="unregister"
+        android:id="@+id/btn_unRegister"
+        android:layout_alignTop="@+id/btn_register"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_userId"
+        android:hint="enter new user id here"
+        android:layout_below="@+id/txt_email"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/txt_email"
+        android:hint="enter your email here"
+        android:layout_below="@+id/registrationProgressBar"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_msg"
+        android:textColor="#054510"
+        android:layout_below="@+id/txt_userId"
+        android:layout_alignStart="@+id/txt_userId"
+        android:layout_marginTop="42dp"
+        android:layout_alignEnd="@+id/txt_email"
+        android:hint="type your message here..." />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn_back"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/txt_userId"
+        android:enabled="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/btn_back2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/btn_register" />
+
+
+</RelativeLayout>
+</FrameLayout>

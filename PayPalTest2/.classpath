@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="F:/Mikiyas/new backup/Android_and_java_Tutorial/Paypal_android_integeration/newSdk/classes.jar" sourcepath="F:/Mikiyas/new backup/Android_and_java_Tutorial/Paypal_android_integeration/newSdk/paypal-android-sdk-2.12.4 (1).zip"/>
+	<classpathentry exported="true" kind="lib" path="F:/Mikiyas/new backup/Android_and_java_Tutorial/Paypal_android_integeration/card_io_sdk/card.io-Android-SDK-master/aars/card_io.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/Mikiyas/new backup/Android_and_java_Tutorial/Paypal_android_integeration/okhttp/okhttp-2.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/Mikiyas/new backup/Android_and_java_Tutorial/Paypal_android_integeration/okhttp/okio-1.6.0.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

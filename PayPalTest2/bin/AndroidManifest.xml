@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.paypaltest2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.paypaltest2.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.example.paypaltest2.PayPal_sdk"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.paypal.android.MEP.PayPalConfiguration" android:configChanges="keyboardHidden|orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalConfiguration" />
+		<activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+		<activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity"/>
+		<activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity"/>
+		<activity android:name="io.card.payment.CardIOActivity" android:configChanges="keyboardHidden|orientation" />
+		<activity android:name="io.card.payment.DataEntryActivity" />
+    </application>
+
+</manifest>

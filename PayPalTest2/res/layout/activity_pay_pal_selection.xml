@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Payment using paypal sdk"
+		android:id="@+id/button_paypal_sdk"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="79dp" />
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Payment using MPL"
+		android:id="@+id/button_paypal_mpl"
+		android:layout_centerVertical="true"
+		android:layout_alignLeft="@+id/button_paypal_sdk"
+		android:layout_alignStart="@+id/button_paypal_sdk"
+		android:layout_alignRight="@+id/button_paypal_sdk"
+		android:layout_alignEnd="@+id/button_paypal_sdk" />
+
+    
+
+</LinearLayout>
