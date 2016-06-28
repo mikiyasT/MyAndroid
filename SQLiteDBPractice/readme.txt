@@ -1,4 +1,3 @@
-Author : Mikyas Teshome.
 Environment:
 This adnroid project is developed Eclipse.
 Application :
